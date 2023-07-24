@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Líneas de atención</title>
+    <link  rel="icon"   href="images/ada.png" />
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+
+<!-- Bootstrap CSS v5.2.0-beta1 -->
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+ <!-- J QUERY -->
+ <script src="jquery/jquery-3.1.1.js"></script>
+
+
+    <script>
+  // Función para verificar si hay conexión a Internet
+  function hayConexionInternet() {
+    return navigator.onLine;
+  }
+
+  // Función para cargar el contenido según el estado de conexión
+  function cargarContenido() {
+    var iframe = $('#iframe_form');
+    var imagen = $('#ada_nointernet');
+    var loadingImage = $('#loading_image');
+
+
+    if (hayConexionInternet()) {
+
+
+      // Mostrar el iframe una vez cargado
+      iframe.on('load', function() {
+        loadingImage.hide();
+        iframe.show();
+        });
+
+      // Mostrar la imagen de carga si ocurre un error al cargar el iframe
+      iframe.on('error', function() {
+        loadingImage.hide();
+        // Manejar el error según sea necesario
+      });
+
+
+
+
+    } else {
+      iframe.hide();  // Ocultar el iframe
+      loadingImage.hide();  // Ocultar la imagen de carga
+      imagen.show();  // Mostrar la imagen
+    }
+  }
+
+  // Llamar a la función al cargar la página
+  $(document).ready(function() {
+    cargarContenido();
+  });
+</script>
+
+
+
+</head>
+
+<body onload="cargarContenido()">
+
+
+
+<center>
+
+
+  <img src="images/Ada Calma PNG.png" alt="" width="100%">
+
+
+
+    <!--estilos de lineas de atención-->
+    <style>
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas iguales */
+    gap: 30px; /* Espacio entre elementos */
+  }
+
+  .button {
+    width: 100%; /* Asegura que los botones ocupen todo el ancho disponible */
+  }
+  </style>
+
+
+    <style>
+    body{
+  text-align:center;
+  background-color:#ffffff;
+  }
+
+
+
+  .button a{
+  color:white;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:36px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#000000;
+  display:block;
+  position:relative;
+  padding:3px 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+  padding-top: 3px;
+  width: 100%;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+
+   -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #000000;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #000000;
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 8px 0 #000000;
+
+
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  }
+
+  .button a:active{
+  top:10px;
+  background-color:#ea0202;
+
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #ea0202;
+  -moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #ea0202;
+  box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #ea0202;
+  }
+
+
+  </style>
+
+    <!--FIN estilos de lineas de atención-->
+    <br>
+    <br>
+    <!--LINEAS DE ATENCION-->
+
+    <div class="container">
+        <div class="grid-container">
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#POLICIA-NACIONAL"><img src="images/policia nacional.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#LINEA-PURPURA"><img src="images/Linea_Púrpura.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#DIVERSA"><img src="images/linea_diversa.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#CRUZ-ROJA"><img src="images/cruz roja.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#EMERGENCIAS"><img src="images/123_emergencias.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#LINEA-PSICOACTIVA"><img src="images/linea psicoactiva.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#BOMBEROS"><img src="images/bomberos.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="" data-bs-toggle="modal" data-bs-target="#CIENTOSEIS"><img src="images/el poder de ser escuchado.png" alt="" width="100%"></a>
+            </div>
+            <div class="button">
+                <a href="mas_lineas.html"><img src="images/mas lineas.jpg" alt="" width="100%"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--FIN LINEAS DE ATENCION-->
+
+
+
+
+
+
+
+
+
+    <!-- Modal LINEA-POLICIA -->
+<div class="modal fade" id="POLICIA-NACIONAL" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/policia nacional.png" width="40px"><h3 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>POLICÍA NACIONAL</b></h3>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>
+            <h6>La función pública atribuida a los policías tiene como principales objetivos mantener la seguridad y el orden en lugares públicos; hacer respetar las leyes y proteger a los ciudadanos y sus bienes de peligros y actos delictivos.</h6>
+            <br>
+            <h6>Horario: 24/7 todo el año</h6>
+            <h6>Cubrimiento: Bogotá</h6>
+            <br>
+            <h1>ELIGE EL MODO QUE QUIERES USAR</h1>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">   
+            <a href="tel:112">
+            <button type="button" class="btn btn-success mt-0"><h3><i class="fa-solid fa-phone"></i></h3></button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal LINEA-POLICIA-->
+
+<!-- Modal  PURPURA-->
+<div class="modal fade" id="LINEA-PURPURA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/Linea_Púrpura.png" width="40px"><h3 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>LÍNEA PURPURA</b></h3>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>
+            <h6>La Línea Púrpura Distrital es una iniciativa de la Secretaría de Salud y la Secretaría de la Mujer de Bogotá, que centra sus esfuerzos en la atención a las mujeres. La línea es atendida por psicólogas, enfermeras, abogadas y trabajadoras sociales para ayudar a mujeres en situaciones de violencia, brindar atención y acompañamiento psicosocial y orientar e informar a las mujeres sobre sus derechos fundamentales, sexuales y reproductivos.</h6>
+            <br>
+            <h6>Horario 24/7 todo el año</h6>
+            <h6>Cubrimiento: Bogotá</h6> 
+            <br> 
+            <b><H1>ELIGE EL MODO QUE QUIERES USAR</H1></b>
+         
+  </center> 
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">
+            <a href="https://api.whatsapp.com/send?phone=+573007551847&text=Necesito%20ayuda!">
+              <button type="button" class="btn btn-success m-4 mt-0 mb-0"><h1><i class="fa-brands fa-whatsapp"></i></h1></button>
+            </a>
+            
+            <a href="tel:01 8000 11 21 37">
+              <button type="button" class="btn btn-success m-4 mt-0 mb-0"><h1><i class="fa-solid fa-phone"></i></h1></button>
+            </a>
+  
+            <a href="mailto:ldpurpura@sdmujer.gov.co">
+              <button type="button" class="btn btn-success m-4 mt-0 mb-0"><h1><i class="fa-solid fa-envelope"></i></h1></button>
+            </a> 
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal PURPURA-->
+
+
+<!-- Modal  DIVERSA-->
+<div class="modal fade" id="DIVERSA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/linea_diversa.png" width="40px"><h3 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>LÍNEA DIVERSA</b></h3>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>
+            <h6>La línea diversa de la Secretaría Distrital de Integración Social de Bogotá se enfoca en la prestación de asesoría a la comunidad LGBTIQ+. Su eje principal es la intervención en situaciones de crisis o emergencia emocional que requieran atención inmediata. Así mismo, brinda orientación y ayuda en casos de violencia, dudas y resolución de conflictos.</h6>
+            <br>
+            <h6>Horario: Lunes a viernes de 8:00am-6:00pm</h6>
+            <h6>Sabado de 10:00am-4:00pm</h6>
+            <h6>Cubrimiento: Bogotá</h6> 
+            <br>
+            <h1>ELIGE EL MODO QUE QUIERES USAR</h1>
+            
+          </center>
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">
+          
+            <a href="https://api.whatsapp.com/send?phone=+573108644214&text=Necesito%20ayuda%2">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h1><i class="fa-brands fa-whatsapp"></i></h1></button>
+            </a>
+          
+            <a href="tel:3108644214">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h1><i class="fa-solid fa-phone"></i></h1></button>
+            </a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal DIVERSA-->
+
+
+<!-- Modal CRUZ-ROJA -->
+<div class="modal fade" id="CRUZ-ROJA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/cruz roja.png" width="40px"><h3 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>CRUZ ROJA</b></h3>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>
+            <h6>Su propósito es proteger la vida y la salud y hacer respetar a la vida humana. Promueve la comprensión mutua, la amistad, la cooperación y una paz duradera entre los pueblos. No hace ninguna distinción de nacionalidad, raza, religión, condición social ni credo político.</h6>
+            <br>
+            <h6>Horario: 24/7 todo el año</h6>
+            <h6>Cubrimiento: Bogotá</h6>
+            <br>
+            <h1>ELIGE EL MODO QUE QUIERES USAR</h1>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">   
+
+            <a href="tel:132">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h3><i class="fa-solid fa-phone"></i></h3></button>
+            </a>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal CRUZ-ROJA-->
+
+
+<!-- Modal 123 -->
+<div class="modal fade" id="EMERGENCIAS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/123_emergencias.png" width="40px"><h3 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>LÍNEA 123</b></h3>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>        
+            <h6>El número telefónico 123 es una línea de emergencia nacional que reúne todos los servicios de seguridad y emergencia del país en uno solo. En caso de tener una situación que comprometa su salud mental, usted podrá comunicarse a esta línea donde profesionales capacitados estarán dispuestos las 24 horas del día y los siete días de la semana, para atender cualquier solicitud o urgencia que usted tenga.</h6>
+            <br>        
+            <h6>Horario 24/7 todo el año</h6>
+            <h6>Cubrimiento: Bogotá</h6> 
+            <br>
+            <h1>ELIGE EL MODO QUE QUIERES USAR</h1>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">             
+        
+            <a href="tel:123"><button type="button" class="btn btn-success m-3 mt-0 mb-0">
+              <h3><i class="fa-solid fa-phone"></i></h3></button>
+            </a>
+    
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal 123-->
+
+
+<!-- Modal LINEA-PSICOACTIVA -->
+<div class="modal fade" id="LINEA-PSICOACTIVA" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/linea psicoactiva.png" width="40px"><h5 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>LÍNEA PSICOACTIVA</b></h5>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>                
+            <h6>Esta línea de la Secretaría Distrital de Salud brinda información, orientación y ayuda psicológica en torno al consumo de sustancias psicoactivas. Es un espacio de escucha confidencial conformado por profesionales en psicología especializados en el tema y que buscan la mitigación de riesgos físicos y mentales derivados del consumo irresponsable de sustancias psicoactivas.</h6>
+            <br>
+            <h6>Horario: domingo a domingo (incluidos los días festivos) de 7:30 am a 10:30 pm en jornada continua</h6>
+            <h6>Cubrimiento: Bogotá</h6> 
+            <br>
+            <h1>ELIGE EL MODO QUE QUIERES USAR</h1>
+    </center>
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">
+
+            <a href="https://api.whatsapp.com/send?phone=+573012761197&text=Necesito%20ayuda">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h3><i class="fa-brands fa-whatsapp"></i></h3></button>
+            </a>
+  
+            <a href="tel:018000112439">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h3><i class="fa-solid fa-phone"></i></h3></button></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal LINEA-PSICOACTIVA-->
+
+
+<!-- Modal BOMBEROS -->
+<div class="modal fade" id="BOMBEROS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/bomberos.png" width="40px"><h3 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>BOMBEROS</b></h3>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>
+            <h6>La gestión integral del riesgo contra incendio, los preparativos y atención de rescates en todas sus modalidades y la atención de incidentes con materiales peligrosos, estarán a cargo de las instituciones Bomberiles y para todos sus efectos, constituyen un servicio público esencial a cargo del Estado.</h6>
+            <br>
+            <h6>Horario: 24/7 todo el año</h6>
+            <h6>Cubrimiento: Bogotá</h6>
+            <br>
+            <h1>ELIGE EL MODO QUE QUIERES USAR</h1>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">   
+
+            <a href="tel:119">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h3><i class="fa-solid fa-phone"></i></h3></button>
+            </a>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal BOMBEROS-->
+
+
+<!-- Modal 106 -->
+<div class="modal fade" id="CIENTOSEIS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <img src="images/el poder de ser escuchado.png" width="40px"><h1 class="modal-title m-3 mt-0 mb-0" id="exampleModalLabel"><b>LÍNEA 106</b></h1>
+          <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <center>
+            <h6>Tenemos expertos que te escuchan y orientan en el cuidado de tu salud mental y la de tu familia, atención para niños, niñas, adolescentes, y adultos de todas las edades quienes pueden recibir escucha y apoyo psicológico por parte de la secretaría distrital de salud.</h6>
+            <br>
+            <h6>Horario: 24/7 todo el año</h6>
+            <h6>Cubrimiento: Bogotá</h6>
+            <br>
+            <h1>ELIGE EL MODO QUE QUIERES USAR</h1>
+          </center>
+        </div>
+        <div class="modal-footer">
+          <div id="botonesdiv">   
+
+            <a href="https://api.whatsapp.com/send?phone=+573007548933&text=Necesito%20ayuda">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h3><i class="fa-brands fa-whatsapp"></i></h3></button>
+            </a>
+        
+            <a href="tel:106">
+            <button type="button" class="btn btn-success m-3 mt-0 mb-0"><h3><i class="fa-solid fa-phone"></i></h3></button>
+            </a>
+        
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--Fin Modal 106-->
+
+
+
+
+       <!-- Modal TERMINOS Y CONDICIONES-->
+    <div class="modal fade" id="terminos_condiciones" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title terminos" id="staticBackdropLabel"><b><i class="fa-solid fa-file-lines"></i> TÉRMINOS Y CONDICIONES</b></h4>
+                </div>
+                <div class="modal-body">
+                    <br>
+                    <details>
+                        <summary><b> Calidad de la información</b></summary>
+                        <div>
+                            Los datos y la información en general que aparecen en este Portal Web se han introducido siguiendo estrictos procedimientos de control de calidad. No obstante, el DAFP no se responsabiliza por el uso e interpretación realizada por terceros.
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary><b> Uso de la información</b></summary>
+                        <div>
+                            La información contenida en este portal podrá ser utilizada teniendo en cuenta las normas que protegen el derecho a la propiedad intelectual, es decir los derechos sobre la propiedad de la información de la Función Pública.
+                        </div>
+                    </details>
+                    <details>
+                        <summary><b> Contenido</b></summary>
+                        <div>
+                            El material y la información contenida en el Portal de la Entidad se encuentra sujeto a modificaciones y por lo tanto la Función Pública no se responsabiliza por su vigencia una vez la misma se haya impreso.  Por otra parte, la vigencia de las normas está sujeta a la actividad legislativa y a las decisiones gubernamentales que generan la dinámica administrativa de la Función Pública.
+                        </div>
+                    </details>
+                    <details>
+                        <summary><b> Enlaces</b></summary>
+                        <div>
+                            El portal contiene enlaces a páginas externas sobre las cuales La Función Pública no ejerce control alguno y respecto de las cuales no tiene responsabilidad. En este sentido, el contenido de tales enlaces será únicamente responsabilidad de las entidades respectivas o de sus administradores.
+                        </div>
+                    </details>
+                    <details>
+                        <summary><b> Disponibilidad de la información</b></summary>
+                        <div>
+                            La Función Pública no garantiza el funcionamiento de la red de comunicaciones y por tanto no asume responsabilidad alguna sobre la disponibilidad de este portal. El servidor podrá ser desconectado sin previo aviso, La Función Pública hará todo lo necesario para que el impacto por tareas de mantenimiento sea el menor posible.
+                        </div>
+                    </details>
+                    <details>
+                        <summary><b> Responsabilidad</b></summary>
+                        <div>
+                            La Función Pública no se hace responsable de ningún daño o perjuicio sufrido por el usuario, que se derive del acceso a este portal o del uso de la información o aplicaciones en él contenido.
+                        </div>
+                    </details>
+                    <details>
+                        <summary><b> Limitaciones de acceso</b></summary>
+                        <div>
+                            Excepto que esté expresamente permitido por la Función Pública, está estrictamente prohibido el acceso o intento de acceso a otros sistemas de la Entidad u otra información contenida en el sistema para algún fin. El usuario acepta que no podrá usar ningún mecanismo o hardware u otro proceso manual o automático  para capturar, monitorizar como propio o copiar el Portal Web y los sistemas de información de la Entidad o contenido alguno sin consentimiento por escrito de la Función Pública.
+                        </div>
+                    </details>
+                    <details>
+                        <summary><b> Actualización de la Información</b></summary>
+                        <div>
+                            La Función Pública hará los esfuerzos razonables para incluir información exacta y actualizada en el Portal Web institucional. Sin embargo, dado que la información cambia tan rápidamente, la Función Pública no puede garantizar totalmente la exactitud y actualidad de la información. Además, la Entidad NO ASUME RESPONSABILIDAD LEGAL ALGUNA SOBRE LA FIABILIDAD, EXACTITUD, VALIDEZ, ACTUALIDAD, UTILIDAD O INTEGRIDAD DE CUALQUIER INFORMACIÓN EN ESTA PAGINA WEB.
+                        </div>
+                    </details>
+                    <details>
+                        <summary><b> Aceptación de los términos de uso</b></summary>
+                        <div>
+                            La Función Pública solicita al visitante y al usuario de este Portal, que lean detallada y juiciosamente estas condiciones y la política de privacidad, antes de iniciar su exploración o utilización. Si alguno de los dos, no está de acuerdo con estas condiciones o con cualquier disposición de la política de privacidad, le sugerimos que se abstenga de acceder o navegar por el Portal Web y los sistemas de información de nuestra entidad.
+                        </div>
+                    </details>
+                    <br>
+                    <br>
+                    <!--botones de aceptar terminos y condiciones-->
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-danger" id="terminos" data-bs-dismiss="modal"><h3><i class="fa-solid fa-xmark"></i> Cerrar</h3></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIN MODAL TERMINOS Y CONDICIONES-->
+
+    <style>
+    #loading-image {
+       width:100%;
+
+    }
+    #ada_loading{
+    width:100%;
+    }
+    </style>
+
+
+
+    <!-- Modal FORMULARIO PANICO-->
+    <div class="modal fade" id="panico_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <iframe src="https://forms.zohopublic.com/GrupoMasin/form/Botndepnico/formperma/64AeWbEsBdCyvAURp1bkjN352aG7JnUrIgR4WnNiERk" frameborder="0" width="100%" height="100%" id="iframe_form"></iframe>
+                    <div id="loading_image">
+                        <img src="images/ada_loading.gif" id="ada_loading"/>
+                    </div>
+
+
+                    <img id="ada_nointernet" src="images/ada_sin_internet.png" width="100%" style="display: none;">
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FIN Modal FORMULARIO PANICO-->
+
+
+    <!--ESTILOS BOTON PANICO-->
+    <style>
+  body{
+text-align:center;
+background-color:#ffffff;
+}
+
+.boton_panico a{
+color:white;
+font-family:Helvetica, sans-serif;
+font-weight:bold;
+font-size:36px;
+text-align: center;
+text-decoration:none;
+
+display:block;
+position:relative;
+padding:5px 5px;
+width: 90%;
+
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+text-shadow: 0px 1px 0px #000;
+filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+
+-webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #000000;
+-moz-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #000000;
+box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #000000;
+
+
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.boton_panico a:active{
+top:10px;
+background-color:#ea0202;
+
+-webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #000000;
+-moz-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #000000;
+box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #000000;
+}
+
+#myCheckbox {
+  width: 20px;
+  height: 20px;
+}
+
+#tyc{
+  text-decoration: underline;
+}
+
+.botton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#ff0000;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: #0D4489;
+}
+
+
+</style>
+
+
+
+    <!--FIN ESTILOS BOTON PANICO-->
+
+    <!--BOTON PANICO-->
+
+    <div>
+
+       
+       <p><input type="checkbox" name="" class="mt-4" id="myCheckbox"> He leído y acepto los <a href="#" data-bs-toggle="modal" data-bs-target="#terminos_condiciones" id="tyc">Términos y Condiciones</a></p>
+    </div>
+
+   
+
+    <div ontouchstart="" class="mt-4">
+        <div class="boton_panico">
+          <!--  <a href="#" class="botton disabled" data-bs-toggle="modal" data-bs-target="#panico_modal" id="boton_panico"><i class="fa-solid fa-location-dot"></i> Encuéntrame </a> -->
+            <a href="https://forms.zohopublic.com/GrupoMasin/form/Botndepnico/formperma/64AeWbEsBdCyvAURp1bkjN352aG7JnUrIgR4WnNiERk" class="botton disabled" id="boton_panico"><i class="fa-solid fa-location-dot"></i> Encuéntrame </a>
+        </div>
+    </div>
+
+    
+    <!--FIN BOTON PANICO-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+<script>
+
+
+$(document).ready(function() {
+  $('#myCheckbox').change(function() {
+    if ($(this).is(':checked')) {
+      $('#boton_panico').removeClass('disabled');
+    } else {
+      $('#boton_panico').addClass('disabled');
+    }
+  });
+});
+
+
+ /*
+
+  $( document ).ready(function() {
+  $('#terminos_condiciones').modal('toggle')
+});
+
+*/
+</script>
+
+
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>
+

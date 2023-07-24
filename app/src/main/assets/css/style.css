@@ -1,0 +1,63 @@
+body{
+    background-color: #ffffff;
+}
+ a{
+    text-decoration: none;
+ }
+
+ .modal {
+   background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo oscuro */
+ }
+
+@font-face {
+    font-family:regular;
+    src: url(Questrial-Regular.ttf);
+}
+
+@font-face {
+    font-family:baloo;
+    src: url(Baloo-Regular.ttf);
+}
+
+details{
+    text-decoration: none;
+    font-family: regular;
+  }
+  
+  summary{
+    list-style: none;
+  }
+  
+  summary::before{
+  content: '◆';
+  }
+  
+  details[open] summary::before{
+    content: '▼';
+  }
+
+  #botonesdiv{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  #terminos{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: regular;
+   
+  }
+  .terminos{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: regular;
+  }
+
+  #titulo_modal{
+    text-align: center;
+  }
+
+  #boton_panico{
+     font-family: baloo;
+  }
