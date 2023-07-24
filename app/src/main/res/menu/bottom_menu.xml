@@ -29,7 +29,7 @@
 
     <item
         android:id="@+id/asistencia"
-        android:title="FielMente"
+        android:title="...Mente"
         android:icon="@drawable/asistencia"
         />
 </menu>
